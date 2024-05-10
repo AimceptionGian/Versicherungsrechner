@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <body>
+        <div className="TitelScreen">
+          <h1>Cyberversicherung</h1>
+          <h3>Versicherung abschliessen in 3 einfachen Schritten</h3>
+          <div className="Progress">
+            <md-icon-button><md-icon>+</md-icon></md-icon-button>
+            <md-linear-progress value="1"></md-linear-progress>
+            <md-icon-button><md-icon>+</md-icon></md-icon-button>
+            <md-linear-progress value="0.5"></md-linear-progress>
+            <md-icon-button><md-icon>+</md-icon></md-icon-button>
+          </div>
+          <md-filled-button>Jetzt Starten</md-filled-button>
+        </div>
+      </body>
     </div>
   );
 }
