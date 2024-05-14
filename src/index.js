@@ -1,15 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './styles/index.css';
+import App from './pages/App';
+import Home from './pages/Home';
+import Choose from './pages/Choose';
 import reportWebVitals from './reportWebVitals';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import '@material/web/all.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route path="/pages/Home" exact component={Home} />
+        <Route path="/pages/Choose" exact component={Choose} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 
