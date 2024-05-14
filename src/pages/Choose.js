@@ -1,15 +1,13 @@
 import '../styles/App.css';
-import { ReactComponent as Logo} from '../images/robot.svg';
-import { ReactComponent as Auswahl} from '../images/auswahl.svg';
-import { ReactComponent as Angaben} from '../images/angaben.svg';
-import { ReactComponent as Berechnung} from '../images/calculator.svg';
-import Progress from './Home';
+import Progress from '../components/Progress';
+import Menu from '../components/Menu';
 
 function Choose() {
     return (
-        <head>
+        <header>
+            <Menu />
             <Progress />
-        </head>
+        </header>
     );
 }
 

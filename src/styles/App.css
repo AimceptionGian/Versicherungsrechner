@@ -1,5 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
 
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  background-color: aliceblue;
+}
+
+header .Progress {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media (max-width: 1000px) {
+  header .Progress {
+    position: static; /* Change to static positioning for smaller screens */
+    left: auto;
+    transform: none;
+  }
+}
+
 .Progress {
   display: flex;
   flex-direction: row;
@@ -52,6 +80,13 @@ md-filled-button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  height: max-content;
+  width: max-content;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .Titel {
@@ -69,13 +104,13 @@ md-filled-button {
   margin-bottom: -200px;
 }
 
-body {
-  height: max-content;
-  width: max-content;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.MenuButton md-icon-button .MenuLogo {
+  transform: scale(7);
+}
+
+.MenuButton md-icon-button {
+  width: 100px;
+  height: 100px;
 }
 
 h1, h3, h4{

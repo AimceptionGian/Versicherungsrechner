@@ -7,6 +7,7 @@ import Choose from './pages/Choose';
 import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import '@material/web/all.js';
 
@@ -14,11 +15,21 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/pages/Home">Home</Link>
+          </li>
+          <li>
+            <Link to="/pages/Choose">Choose</Link>
+          </li>
+        </ul>
+      </nav>
       <Routes>
-        <Route path="/pages/Home" exact component={Home} />
-        <Route path="/pages/Choose" exact component={Choose} />
+        <Route path="/pages/Home" element={<Home />} />
+        <Route path="/pages/Choose" element={<Choose />} />
       </Routes>
-    </Router>
+    </Router> 
   </React.StrictMode>
 );
 
