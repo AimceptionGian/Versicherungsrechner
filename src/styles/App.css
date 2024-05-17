@@ -11,7 +11,7 @@ header {
   padding-top: 50px;
   padding-bottom: 50px;
 
-  background-color: aliceblue;
+  background-color: #F7F2FA;
 }
 
 header .Progress {
@@ -21,8 +21,8 @@ header .Progress {
 }
 
 @media (max-width: 1000px) {
-  header .Progress {
-    position: static; /* Change to static positioning for smaller screens */
+  header .Progress {    
+    position: static;
     left: auto;
     transform: none;
   }
@@ -60,6 +60,20 @@ md-filled-button {
   font-family: "Inika";
 }
 
+md-list {
+  flex-direction: row;
+  width: max-content;
+  align-items: start;
+  margin: 12px;
+  padding: 0;
+}
+
+md-list-item {
+  width: 280px;
+  height: 288px;
+  align-items: start;
+}
+
 .AuswahlIcon {
   width: 60px;
   height: auto;
@@ -75,7 +89,7 @@ md-filled-button {
   height: auto;
 }
 
-.TitelScreen {
+.Content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,7 +127,7 @@ md-filled-button {
   height: 100px;
 }
 
-h1, h3, h4{
+h1, h3, h4, h5, h6{
   margin: 18px;
   font-family: "Inika";
   font-weight: 400;
@@ -128,4 +142,35 @@ h1 {
 h4 {
   font-size: 20px;
   margin: 0;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+.Horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: fit-content;
+  height: fit-content;
+}
+
+.HorizontalTop {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  min-width: fit-content;
+  height: fit-content;
+}
+
+.Vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
