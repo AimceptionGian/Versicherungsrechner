@@ -2,14 +2,13 @@
 
 header {
   width: 100%;
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  
+  padding: 25px;
+  margin-bottom: 24px;
 
   background-color: #F7F2FA;
 }
@@ -28,6 +27,21 @@ header .Progress {
   }
 }
 
+header .ProgressItem {
+  transform: scale(0.7);
+}
+
+header .MenuButton {
+  transform: scale(0.7);
+}
+
+.Choose {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .Progress {
   display: flex;
   flex-direction: row;
@@ -42,10 +56,26 @@ header .Progress {
   align-items: center;
 }
 
-md-icon-button {
-  margin-right: 40px;
-  margin-left: 40px;
+.Info {
+  max-width: calc(100% - 880px);
+  --width: calc(100% - 880px);
+  padding: 25px;
+  padding-right: 150px;
+  padding-left: 50px;
+  border-radius: 100px;
+  background-color: #F7F2FA;
+  position: fixed;
+  top: calc(75% - 25px);
+  left: calc(75% - 200px - var(--width));
+}
 
+.Erklaerung {
+  position: fixed;
+  top: calc(100% - 352px);
+  left: calc(75% - 250px);
+}
+
+md-icon-button {
   width: 60px;
   height: 60px;
 }
@@ -70,7 +100,7 @@ md-list {
 
 md-list-item {
   width: 280px;
-  height: 288px;
+  height: 250px;
   align-items: start;
 }
 
@@ -92,16 +122,15 @@ md-list-item {
 .Content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
 
-  height: max-content;
-  width: max-content;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+
+  overflow-y: scroll;
 }
+
 
 .Titel {
   display: flex;
@@ -146,6 +175,8 @@ h4 {
 
 h5 {
   font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h6 {
@@ -163,12 +194,15 @@ h6 {
 .HorizontalTop {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
+  justify-content: center;
   min-width: fit-content;
   height: fit-content;
 }
 
 .Vertical {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
