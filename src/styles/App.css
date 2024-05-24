@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
 
 header {
-  width: 100%;
   height: 100px;
   display: flex;
   flex-direction: row;
@@ -35,13 +34,6 @@ header .MenuButton {
   transform: scale(0.7);
 }
 
-.Choose {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 .Progress {
   display: flex;
   flex-direction: row;
@@ -65,7 +57,7 @@ header .MenuButton {
   border-radius: 100px;
   background-color: #F7F2FA;
   position: fixed;
-  top: calc(75% - 25px);
+  top: calc(75% - 100px);
   left: calc(75% - 200px - var(--width));
 }
 
@@ -120,15 +112,11 @@ md-list-item {
 }
 
 .Content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: top;
   align-items: center;
-
-  height: 100%;
-  width: 100%;
-
-  overflow-y: scroll;
 }
 
 
