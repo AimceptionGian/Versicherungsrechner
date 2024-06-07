@@ -3,7 +3,7 @@ import { ReactComponent as Erklaerung} from '../images/erklaerung.svg';
 
 const Info = ({hoverIndex}) => {
     const infoTexts = [
-        <h6 key='1'>
+        <h6 key='0'>
                 Dieses Modul schützt Sie gegen Diebstahl und Missbrauch Ihrer Online-Konten, Identitätsdaten, Login-Daten und Kreditkarten.
                 <br />
                 <br />
@@ -42,7 +42,7 @@ const Info = ({hoverIndex}) => {
                 <br />
                 Für alle, die Kreditkarten oder Online-Logins (z. B. bei E-Mail- oder Online-Diensten) nutzen.
         </h6>,
-        <h6 key='2'>
+        <h6 key='1'>
                 Dieses Modul schützt Sie gegen rufschädigende und persönlichkeitsverletzende Inhalte.
                 <br />
                 <br />
@@ -82,7 +82,7 @@ const Info = ({hoverIndex}) => {
                 <br />
                 Insbesondere für Nutzer von sozialen Medien und Eltern von Teenagern.
         </h6>,
-        <h6 key='3'>
+        <h6 key='2'>
                 Dieses Modul schützt Sie gegen Nicht-, Falsch- oder mangelhafte Lieferung durch unseriöse Onlineshops oder Betrüger im Onlinehandel.
                 <br />
                 <br />
@@ -119,7 +119,7 @@ const Info = ({hoverIndex}) => {
                 <br />
                 Für alle, die im Internet einkaufen.
         </h6>,
-        <h6 key='4'>
+        <h6 key='3'>
                 Mit diesem Modul erhalten Sie professionelle Unterstützung bei der Virenentfernung, Wiederherstellung Ihrer Daten und bei technischen Defekten von Computern und Laptops.
                 <br />
                 <br />

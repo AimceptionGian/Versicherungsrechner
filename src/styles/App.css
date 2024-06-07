@@ -49,12 +49,6 @@ header .MenuButton {
   align-items: center;
 }
 
-.ChooseItem {
-  cursor: pointer;
-  padding: 10px;
-  border: 1px solid #000;
-}
-
 .Info {
   display: none;
 }
@@ -77,6 +71,18 @@ header .MenuButton {
   background-color: #F7F2FA;
 }
 
+.InfoMouseHandler {
+  display: none;
+}
+
+.InfoMouseHandler.visible {
+  display: block;
+  position: fixed;
+  top: 425px;
+  width: 65%;
+  height: 30%;
+}
+
 .InfoText {
   display: none;
 }
@@ -90,7 +96,7 @@ header .MenuButton {
   margin-top: 5%;
   margin-left: 10%;
   margin-right: -10%;
-  transform: scale(2);
+  transform: scale(1);
 }
 
 md-icon-button {

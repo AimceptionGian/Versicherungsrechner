@@ -10,9 +10,11 @@ import { useState } from 'react';
 
 const Choose = () => {
     const [hoverIndex, setHoverIndex] = useState(null);
+    const [tempHoverIndex, setTempHoverIndex] = useState(null);
 
     const handleMouseEnter = (index) => {
         setHoverIndex(index);
+        setTempHoverIndex(index);
     };
 
     const handleMouseLeave = () => {
@@ -23,12 +25,12 @@ const Choose = () => {
         <div className='Choose'>
             <header>
                 <Menu />
-                <Progress />
+                <Progress progressBarValue1='0.5' progressBarValue2='0'/>
             </header>
             <div className='Content'>
                 <div className='HorizontalTop'>
                     <md-list>
-                        <md-list-item onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={handleMouseLeave} className="ChooseItem">
+                        <md-list-item onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={handleMouseLeave}>
                             <div className='Horizontal'>
                                 <Security />
                                 <h5>Datenrettung <br /> & IT-Assistance</h5>
@@ -43,7 +45,7 @@ const Choose = () => {
                         </md-list-item>
                     </md-list>
                     <md-list>
-                        <md-list-item onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave} className="ChooseItem">
+                        <md-list-item onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave}>
                             <div className='Horizontal'>
                                 <Shopping />
                                 <h5>Online-Shopping</h5>
@@ -58,7 +60,7 @@ const Choose = () => {
                         </md-list-item>
                     </md-list>
                     <md-list>
-                        <md-list-item onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={handleMouseLeave} className="ChooseItem">
+                        <md-list-item onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={handleMouseLeave}>
                             <div className='Horizontal'>
                                 <Mobbing />
                                 <h5>Online-Mobbing <br /> & Urheberrechte</h5>
@@ -72,7 +74,7 @@ const Choose = () => {
                         </md-list-item>
                     </md-list>
                     <md-list>
-                        <md-list-item onMouseEnter={() => handleMouseEnter(3)} onMouseLeave={handleMouseLeave} className="ChooseItem">
+                        <md-list-item onMouseEnter={() => handleMouseEnter(3)} onMouseLeave={handleMouseLeave}>
                             <div className='Horizontal'>
                                 <CreditCard />
                                 <h5>Online-Konten <br /> & Kreditkarten</h5>
@@ -86,7 +88,9 @@ const Choose = () => {
                         </md-list-item>
                     </md-list>
                 </div>
-                <Info hoverIndex={hoverIndex} />
+                <div onMouseEnter={() => handleMouseEnter(tempHoverIndex)} onMouseLeave={handleMouseLeave} className={`InfoMouseHandler ${hoverIndex === null ? '' : 'visible'}`}>
+                    <Info hoverIndex={hoverIndex} />
+                </div>
             </div>
         </div>
     );
