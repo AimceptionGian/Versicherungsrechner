@@ -6,8 +6,19 @@ import { ReactComponent as Security } from '../images/security.svg';
 import { ReactComponent as Shopping } from '../images/shopping.svg';
 import { ReactComponent as Mobbing } from '../images/mobbing.svg';
 import { ReactComponent as CreditCard } from '../images/creditcard.svg';
+import { useState } from 'react';
 
-function Choose() {
+const Choose = () => {
+    const [hoverIndex, setHoverIndex] = useState(null);
+
+    const handleMouseEnter = (index) => {
+        setHoverIndex(index);
+    };
+
+    const handleMouseLeave = () => {
+        setHoverIndex(null);
+    };
+
     return (
         <div className='Choose'>
             <header>
@@ -17,7 +28,7 @@ function Choose() {
             <div className='Content'>
                 <div className='HorizontalTop'>
                     <md-list>
-                        <md-list-item>
+                        <md-list-item onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={handleMouseLeave} className="ChooseItem">
                             <div className='Horizontal'>
                                 <Security />
                                 <h5>Datenrettung <br /> & IT-Assistance</h5>
@@ -32,7 +43,7 @@ function Choose() {
                         </md-list-item>
                     </md-list>
                     <md-list>
-                        <md-list-item>
+                        <md-list-item onMouseEnter={() => handleMouseEnter(1)} onMouseLeave={handleMouseLeave} className="ChooseItem">
                             <div className='Horizontal'>
                                 <Shopping />
                                 <h5>Online-Shopping</h5>
@@ -47,7 +58,7 @@ function Choose() {
                         </md-list-item>
                     </md-list>
                     <md-list>
-                        <md-list-item>
+                        <md-list-item onMouseEnter={() => handleMouseEnter(2)} onMouseLeave={handleMouseLeave} className="ChooseItem">
                             <div className='Horizontal'>
                                 <Mobbing />
                                 <h5>Online-Mobbing <br /> & Urheberrechte</h5>
@@ -61,7 +72,7 @@ function Choose() {
                         </md-list-item>
                     </md-list>
                     <md-list>
-                        <md-list-item>
+                        <md-list-item onMouseEnter={() => handleMouseEnter(3)} onMouseLeave={handleMouseLeave} className="ChooseItem">
                             <div className='Horizontal'>
                                 <CreditCard />
                                 <h5>Online-Konten <br /> & Kreditkarten</h5>
@@ -75,7 +86,7 @@ function Choose() {
                         </md-list-item>
                     </md-list>
                 </div>
-                <Info />
+                <Info hoverIndex={hoverIndex} />
             </div>
         </div>
     );
