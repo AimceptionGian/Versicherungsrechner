@@ -3,7 +3,7 @@ import { ReactComponent as Auswahl} from '../images/auswahl.svg';
 import { ReactComponent as Angaben} from '../images/angaben.svg';
 import { ReactComponent as Berechnung} from '../images/calculator.svg';
 
-const Progress = ({progressBarValue1}, {progressBarValue2}) => {
+const Progress = ({ progressBarValue1, progressBarValue2 }) => {
     return (
         <div className='Progress'>
             <div className='ProgressItem'>
