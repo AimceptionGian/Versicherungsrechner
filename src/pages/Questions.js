@@ -23,7 +23,10 @@ function Questions() {
             <header>
                 <Menu />
                 <Progress progressBarValue1='1' progressBarValue2={questionProgress}/>
-                <QuestionProgress className='QuestionProgress' />
+                <div className='QuestionProgressContainer'>
+                    <md-divider />
+                    <QuestionProgress />
+                </div>
             </header>
             <div className='Content'>
                 <Question questionCounter={questionCounter} incrementQuestionCounter={incrementQuestionCounter} />

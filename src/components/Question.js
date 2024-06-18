@@ -49,7 +49,7 @@ const Question = ({ questionCounter, incrementQuestionCounter }) => {
 
     const questionList = [
         <div className='Vertical'>
-            <Adults />
+            <Adults className='Adults' />
             <h3>Wieviele Erwachsene (über 18) gehören zu Ihrem Haushalt?</h3>
             <div className='Horizontal'>
                 {q0ButtonValues.map((value) => (
@@ -62,7 +62,7 @@ const Question = ({ questionCounter, incrementQuestionCounter }) => {
             </div>
         </div>,
         <div className='Vertical'>
-            <Baby />
+            <Baby className='Baby' />
             <h3>Wieviele Kinder (unter 18) gehören zu Ihrem Haushalt?</h3>
             <div className='Horizontal'>
                 {q1ButtonValues.map((value) => (
@@ -75,7 +75,7 @@ const Question = ({ questionCounter, incrementQuestionCounter }) => {
             </div>
         </div>,
         <div className='Vertical'>
-            <Rathaus />
+            <Rathaus className='Rathaus' />
             <h3>Übt eine versicherte Person eine politische oder religiöse Tätigkeit aus?</h3>
             <div className='Horizontal'>
                 <md-elevated-button onClick={() => handleNumberButton(true)}>Ja</md-elevated-button>
@@ -83,7 +83,7 @@ const Question = ({ questionCounter, incrementQuestionCounter }) => {
             </div>
         </div>,
         <div className='Vertical'>
-            <Famous />
+            <Famous className='Famous' />
             <h3>Ist eine der versicherten Personen eine Person öffentlichen Interesses <br /> oder hat ein Social Media Profil mit mehr als 5000 Followern?</h3>
             <div className='Horizontal'>
                 <md-elevated-button onClick={() => handleNumberButton(true)}>Ja</md-elevated-button>
