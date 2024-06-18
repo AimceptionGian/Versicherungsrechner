@@ -1,12 +1,13 @@
 import '../styles/App.css';
 import Progress from '../components/Progress';
 import Menu from '../components/Menu';
-import Info from '../components/Info'
+import Info from '../components/Info';
 import { ReactComponent as Security } from '../images/security.svg';
 import { ReactComponent as Shopping } from '../images/shopping.svg';
 import { ReactComponent as Mobbing } from '../images/mobbing.svg';
 import { ReactComponent as CreditCard } from '../images/creditcard.svg';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Choose = () => {
     const [hoverIndex, setHoverIndex] = useState(null);
@@ -20,6 +21,12 @@ const Choose = () => {
     const handleMouseLeave = () => {
         setHoverIndex(null);
     };
+
+    const navigate = useNavigate();
+    
+    function handleContinueButton() {
+        navigate("/pages/Questions");
+    }
 
     return (
         <div className='Choose'>
@@ -90,6 +97,9 @@ const Choose = () => {
                 </div>
                 <div onMouseEnter={() => handleMouseEnter(tempHoverIndex)} onMouseLeave={handleMouseLeave} className={`InfoMouseHandler ${hoverIndex === null ? '' : 'visible'}`}>
                     <Info hoverIndex={hoverIndex} />
+                </div>
+                <div className='Continue'>
+                    <md-filled-button onClick={handleContinueButton}>Weiter</md-filled-button>
                 </div>
             </div>
         </div>

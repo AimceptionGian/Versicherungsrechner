@@ -4,10 +4,9 @@ import { useNavigate } from 'react-router-dom';
 
 function Menu() {
     const navigate = useNavigate();
-
     function handleMenuButton() {
         navigate("/pages/Home");
-      }
+    }
 
     return(
         <div onClick={handleMenuButton} className='MenuButton'>

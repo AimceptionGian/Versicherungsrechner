@@ -3,7 +3,7 @@ import { ReactComponent as Erklaerung} from '../images/erklaerung.svg';
 
 const Info = ({hoverIndex}) => {
     const infoTexts = [
-        <h6 key='0'>
+        <h6>
                 Dieses Modul schützt Sie gegen Diebstahl und Missbrauch Ihrer Online-Konten, Identitätsdaten, Login-Daten und Kreditkarten.
                 <br />
                 <br />
@@ -42,7 +42,44 @@ const Info = ({hoverIndex}) => {
                 <br />
                 Für alle, die Kreditkarten oder Online-Logins (z. B. bei E-Mail- oder Online-Diensten) nutzen.
         </h6>,
-        <h6 key='1'>
+        <h6>
+                Dieses Modul schützt Sie gegen Nicht-, Falsch- oder mangelhafte Lieferung durch unseriöse Onlineshops oder Betrüger im Onlinehandel.
+                <br />
+                <br />
+                <b>Leistungen:</b>
+                <ul>
+                    <li>
+                        Rechtsschutz: z. B. Durchsetzung von Ansprüchen gegenüber Online-Shops
+                    </li>
+                    <li>
+                        Erstattung finanzieller Schäden: z. B. durch eine mangelhafte Lieferung
+                    </li>
+                    <li>
+                        Online-Portal mit Cyber-Präventionsservices: z. B. Warnmeldungen vor unseriösen Online-Shops
+                    </li>
+                </ul>
+                <b>Beispiel:</b>
+                <br />
+                Sie bestellen die neueste Spielkonsole, erhalten jedoch ein Vorgängermodell. Der Online-Shop verweigert den Umtausch und behauptet, die richtige Spielkonsole geliefert zu haben.
+                <ul>
+                    <li>
+                        Der Onlinedienst setzt sich mit dem Shop in Verbindung, um das Problem zu lösen.
+                    </li>
+                    <li>
+                        Die Shop reagiert nicht. Ab jetzt versucht die Rechtsschutzversicherung, Ihre Ansprüche durchzusetzen. Der Shop ist jedoch nicht mehr auffindbar – Sie wurden offensichtlich Opfer eines Fake-Shops.
+                    </li>
+                    <li>
+                        Wir erstatten Ihnen die Kosten für die falsche Konsole.
+                    </li>
+                </ul>
+                Ihr Selbstbehalt bei finanziellen Schäden beträgt CHF 200, beim Rechtsschutz müssen Sie keinen Selbstbehalt tragen.
+                <br />
+                <br />
+                <b>Für wen eignet sich dieses Modul?</b>
+                <br />
+                Für alle, die im Internet einkaufen.
+        </h6>,
+        <h6>
                 Dieses Modul schützt Sie gegen rufschädigende und persönlichkeitsverletzende Inhalte.
                 <br />
                 <br />
@@ -82,44 +119,7 @@ const Info = ({hoverIndex}) => {
                 <br />
                 Insbesondere für Nutzer von sozialen Medien und Eltern von Teenagern.
         </h6>,
-        <h6 key='2'>
-                Dieses Modul schützt Sie gegen Nicht-, Falsch- oder mangelhafte Lieferung durch unseriöse Onlineshops oder Betrüger im Onlinehandel.
-                <br />
-                <br />
-                <b>Leistungen:</b>
-                <ul>
-                    <li>
-                        Rechtsschutz: z. B. Durchsetzung von Ansprüchen gegenüber Online-Shops
-                    </li>
-                    <li>
-                        Erstattung finanzieller Schäden: z. B. durch eine mangelhafte Lieferung
-                    </li>
-                    <li>
-                        Online-Portal mit Cyber-Präventionsservices: z. B. Warnmeldungen vor unseriösen Online-Shops
-                    </li>
-                </ul>
-                <b>Beispiel:</b>
-                <br />
-                Sie bestellen die neueste Spielkonsole, erhalten jedoch ein Vorgängermodell. Der Online-Shop verweigert den Umtausch und behauptet, die richtige Spielkonsole geliefert zu haben.
-                <ul>
-                    <li>
-                        Der Onlinedienst setzt sich mit dem Shop in Verbindung, um das Problem zu lösen.
-                    </li>
-                    <li>
-                        Die Shop reagiert nicht. Ab jetzt versucht die Rechtsschutzversicherung, Ihre Ansprüche durchzusetzen. Der Shop ist jedoch nicht mehr auffindbar – Sie wurden offensichtlich Opfer eines Fake-Shops.
-                    </li>
-                    <li>
-                        Wir erstatten Ihnen die Kosten für die falsche Konsole.
-                    </li>
-                </ul>
-                Ihr Selbstbehalt bei finanziellen Schäden beträgt CHF 200, beim Rechtsschutz müssen Sie keinen Selbstbehalt tragen.
-                <br />
-                <br />
-                <b>Für wen eignet sich dieses Modul?</b>
-                <br />
-                Für alle, die im Internet einkaufen.
-        </h6>,
-        <h6 key='3'>
+        <h6>
                 Mit diesem Modul erhalten Sie professionelle Unterstützung bei der Virenentfernung, Wiederherstellung Ihrer Daten und bei technischen Defekten von Computern und Laptops.
                 <br />
                 <br />
@@ -155,7 +155,7 @@ const Info = ({hoverIndex}) => {
     return(
         <div className={`Info ${hoverIndex === null ? '' : 'visible'}`}>
             {infoTexts.map((infoText, index) => (
-                <div key={index} className={`InfoText ${hoverIndex === index ? 'visible' : ''}`}>
+                <div className={`InfoText ${hoverIndex === index ? 'visible' : ''}`}>
                     {infoText}
                 </div>
             ))}

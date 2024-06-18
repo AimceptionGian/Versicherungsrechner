@@ -15,7 +15,7 @@ header {
 header .Progress {
   position: fixed;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-53%);
 }
 
 @media (max-width: 1000px) {
@@ -38,7 +38,6 @@ header .MenuButton {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: top;
   margin: 18px;
 }
 
@@ -92,6 +91,14 @@ header .MenuButton {
   overflow-y: scroll;
 }
 
+.Question {
+  display: none;
+}
+
+.Question.visible {
+  display: block;
+}
+
 .Erklaerung {
   margin-top: 5%;
   margin-left: 10%;
@@ -112,6 +119,15 @@ md-linear-progress {
 md-filled-button {
   margin: 18px;
   font-family: "Inika";
+}
+
+md-elevated-button {
+  margin: 18px;
+  font-family: "Inika";
+}
+
+md-outlined-text-field {
+  width: 150px;
 }
 
 md-list {
@@ -234,4 +250,8 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.Continue {
+  margin-left: 1075px;
 }
