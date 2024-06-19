@@ -82,6 +82,14 @@ header .MenuButton {
   background-color: #DFD5EC;
 }
 
+.QuestionProgressItem.InProgress {
+  background-color: #CCC2DC;
+}
+
+.QuestionProgressItem.Done {
+  background-color: #D0BCFF;
+}
+
 md-icon-button .Adults, .Baby, .Rathaus, .Famous {
   transform: scale(2);
 }
