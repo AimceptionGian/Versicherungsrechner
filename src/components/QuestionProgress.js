@@ -31,22 +31,22 @@ const QuestionProgress = ({ progressBarValue1, progressBarValue2, progressBarVal
     return (
         <div className='QuestionProgress'>
             <div className={`QuestionProgressItem ${progressClass1}`}>
-                <md-icon-button><Adults className='Adults' /></md-icon-button>
+                <md-icon-button><Adults className='AdultsIcon' /></md-icon-button>
                 <h4>Erwachsene</h4>
             </div>
             <md-linear-progress value={progressBarValue1}></md-linear-progress>
             <div className={`QuestionProgressItem ${progressClass2}`}>
-                <md-icon-button><Baby className='Baby' /></md-icon-button>
+                <md-icon-button><Baby className='BabyIcon' /></md-icon-button>
                 <h4>Kinder</h4>
             </div>
             <md-linear-progress value={progressBarValue2}></md-linear-progress>
             <div className={`QuestionProgressItem ${progressClass3}`}>
-                <md-icon-button><Rathaus className='Rathaus' /></md-icon-button>
+                <md-icon-button><Rathaus className='RathausIcon' /></md-icon-button>
                 <h4>Tätigkeit</h4> 
             </div>
             <md-linear-progress value={progressBarValue3}></md-linear-progress>
             <div className={`QuestionProgressItem ${progressClass4}`}>
-                <md-icon-button><Famous className='Famous' /></md-icon-button>
+                <md-icon-button><Famous className='FamousIcon' /></md-icon-button>
                 <h4>Social Media</h4> 
             </div>
         </div>

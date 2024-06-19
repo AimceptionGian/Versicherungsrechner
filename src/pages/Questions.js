@@ -30,17 +30,29 @@ function Questions() {
         });
     }
 
+    const [hovered, setHovered] = useState(false);
+
+    const handleMouseEnter = () => {
+        setHovered(true);
+    };
+
+    const handleMouseLeave = (event) => {
+        if (event.relatedTarget instanceof Node && !event.currentTarget.contains(event.relatedTarget)) {
+            setHovered(false);
+        }
+    };
+
     return (
         <div className='Questions'>
-            <header>
+            <header onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <Menu />
                 <Progress progressBarValue1='1' progressBarValue2={questionProgress}/>
-                <div className='QuestionProgressContainer'>
+                <div className={`QuestionProgressContainer ${hovered ? 'visible' : ''}`}>
                     <md-divider />
                     <QuestionProgress progressBarValue1={progress1} progressBarValue2={progress2} progressBarValue3={progress3} questionCounter={questionCounter}/>
                 </div>
             </header>
-            <div className='Content'>
+            <div className={`Content ${hovered ? 'offset' : ''}`}>
                 <Question questionCounter={questionCounter} incrementQuestionCounter={incrementQuestionCounter} />
             </div>
         </div>

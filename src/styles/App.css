@@ -49,12 +49,16 @@ header .MenuButton {
 }
 
 .QuestionProgressContainer {
+  display: none;
+}
+
+.QuestionProgressContainer.visible {
+  display: block;
   position: fixed;
   width: 100%;
   height: 100px;
   padding-top: 25px;
   padding-bottom: 25px;
-  margin-bottom: 24px;
   top: 149px;
   left: 0;
 
@@ -90,7 +94,7 @@ header .MenuButton {
   background-color: #D0BCFF;
 }
 
-md-icon-button .Adults, .Baby, .Rathaus, .Famous {
+.AdultsIcon, .BabyIcon, .RathausIcon, .FamousIcon {
   transform: scale(2);
 }
 
@@ -223,6 +227,11 @@ md-list-item {
   align-items: center;
 }
 
+.Content.offset {
+  margin-top: 174px;
+  transition: margin-top 0.3s ease;
+}
+
 
 .Titel {
   display: flex;
@@ -299,4 +308,8 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.Continue {
+  margin-left: 1111px;
 }
