@@ -49,7 +49,7 @@ function Questions() {
                 <Progress progressBarValue1='1' progressBarValue2={questionProgress}/>
                 <div className={`QuestionProgressContainer ${hovered ? 'visible' : ''}`}>
                     <md-divider />
-                    <QuestionProgress progressBarValue1={progress1} progressBarValue2={progress2} progressBarValue3={progress3} questionCounter={questionCounter}/>
+                    <QuestionProgress progressBarValue1={progress1} progressBarValue2={progress2} progressBarValue3={progress3} questionCounter={questionCounter} />
                 </div>
             </header>
             <div className={`Content ${hovered ? 'offset' : ''}`}>

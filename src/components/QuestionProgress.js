@@ -28,10 +28,14 @@ const QuestionProgress = ({ progressBarValue1, progressBarValue2, progressBarVal
         }
     }, [questionCounter]);
 
+    const handleButton = (buttonValue) => {
+
+    };
+
     return (
         <div className='QuestionProgress'>
             <div className={`QuestionProgressItem ${progressClass1}`}>
-                <md-icon-button><Adults className='AdultsIcon' /></md-icon-button>
+                <md-icon-button onClick={() => handleButton()}><Adults className='AdultsIcon' /></md-icon-button>
                 <h4>Erwachsene</h4>
             </div>
             <md-linear-progress value={progressBarValue1}></md-linear-progress>

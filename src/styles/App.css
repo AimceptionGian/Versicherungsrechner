@@ -98,6 +98,11 @@ header .MenuButton {
   transform: scale(2);
 }
 
+.Rathaus {
+  width: 88px;
+  height: 88px;
+}
+
 .Info {
   display: none;
 }
@@ -147,6 +152,7 @@ header .MenuButton {
 
 .Question.visible {
   display: block;
+  margin-top: 24px;
 }
 
 .Erklaerung {
