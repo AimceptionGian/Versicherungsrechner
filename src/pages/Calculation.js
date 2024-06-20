@@ -5,7 +5,7 @@ import { ReactComponent as Security } from '../images/security.svg';
 import { ReactComponent as Shopping } from '../images/shopping.svg';
 import { ReactComponent as Mobbing } from '../images/mobbing.svg';
 import { ReactComponent as CreditCard } from '../images/creditcard.svg';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function Calculation() {
     const [checkedCount, setCheckedCount] = useState(0);
@@ -19,6 +19,14 @@ function Calculation() {
             setCheckedCount(checkedCount - 1);
         }
     };
+
+    useEffect(() => {
+        if (checkedCount >= 2) {
+            document.getElementById('Praemie').disabled = false;
+        } else {
+            document.getElementById('Praemie').disabled = true;
+        }
+    },[checkedCount]);
 
     const prizes = [63.95, 65.94, 65.52, 35.70];
 
