@@ -2,8 +2,9 @@ import '../styles/App.css';
 import Menu from '../components/Menu';
 import Progress from '../components/Progress';
 import Question from '../components/Question';
-import { useState } from 'react';
 import QuestionProgress from '../components/QuestionProgress';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Questions() {
     const [questionCounter, setQuestionCounter] = useState(0);
@@ -11,7 +12,8 @@ function Questions() {
     const [progress1, setProgress1] = useState(0.5);
     const [progress2, setProgress2] = useState(0);
     const [progress3, setProgress3] = useState(0);
-
+    const navigate = useNavigate();
+    
     function incrementQuestionCounter() {
         setQuestionCounter(prevCounter => {
             const newCounter = prevCounter + 1;
@@ -22,8 +24,10 @@ function Questions() {
             } else if (newCounter === 2) {
                 setProgress2(1);
                 setProgress3(0.5);
-            } else {
+            } else if (newCounter === 3){
                 setProgress3(1);
+            } else {
+                navigate("/pages/Calculation");
             }
             setQuestionProgress(newProgress);
             return newCounter;
