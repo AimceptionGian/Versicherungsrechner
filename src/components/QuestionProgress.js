@@ -5,7 +5,7 @@ import { ReactComponent as Rathaus } from '../images/rathaus.svg';
 import { ReactComponent as Famous } from '../images/famous.svg';
 import { useState, useEffect } from 'react';
 
-const QuestionProgress = ({ progressBarValue1, progressBarValue2, progressBarValue3, questionCounter }) => {
+const QuestionProgress = ({ progressBarValue1, progressBarValue2, progressBarValue3, questionCounter, setQuestionCounter }) => {
     const [progressClass1, setProgressClass1] = useState('');
     const [progressClass2, setProgressClass2] = useState('');
     const [progressClass3, setProgressClass3] = useState('');
@@ -28,29 +28,25 @@ const QuestionProgress = ({ progressBarValue1, progressBarValue2, progressBarVal
         }
     }, [questionCounter]);
 
-    const handleButton = (buttonValue) => {
-
-    };
-
     return (
         <div className='QuestionProgress'>
             <div className={`QuestionProgressItem ${progressClass1}`}>
-                <md-icon-button onClick={() => handleButton()}><Adults className='AdultsIcon' /></md-icon-button>
+                <md-icon-button onClick={() => setQuestionCounter(0)}><Adults className='AdultsIcon' /></md-icon-button>
                 <h4>Erwachsene</h4>
             </div>
             <md-linear-progress value={progressBarValue1}></md-linear-progress>
             <div className={`QuestionProgressItem ${progressClass2}`}>
-                <md-icon-button><Baby className='BabyIcon' /></md-icon-button>
+                <md-icon-button onClick={() => setQuestionCounter(1)}><Baby className='BabyIcon' /></md-icon-button>
                 <h4>Kinder</h4>
             </div>
             <md-linear-progress value={progressBarValue2}></md-linear-progress>
             <div className={`QuestionProgressItem ${progressClass3}`}>
-                <md-icon-button><Rathaus className='RathausIcon' /></md-icon-button>
+                <md-icon-button onClick={() => setQuestionCounter(2)}><Rathaus className='RathausIcon' /></md-icon-button>
                 <h4>Tätigkeit</h4> 
             </div>
             <md-linear-progress value={progressBarValue3}></md-linear-progress>
             <div className={`QuestionProgressItem ${progressClass4}`}>
-                <md-icon-button><Famous className='FamousIcon' /></md-icon-button>
+                <md-icon-button onClick={() => setQuestionCounter(3)}><Famous className='FamousIcon' /></md-icon-button>
                 <h4>Social Media</h4> 
             </div>
         </div>
