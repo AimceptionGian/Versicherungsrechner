@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 function Menu() {
     const navigate = useNavigate();
     function handleMenuButton() {
-        navigate("/pages/Home");
+        navigate("/");
     }
 
     return(

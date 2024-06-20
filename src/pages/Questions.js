@@ -27,7 +27,7 @@ function Questions() {
             } else if (newCounter === 3){
                 setProgress3(1);
             } else {
-                navigate("/pages/Calculation");
+                navigate("/Calculation");
             }
             setQuestionProgress(newProgress);
             return newCounter;

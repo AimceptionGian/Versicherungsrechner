@@ -7,8 +7,9 @@ function Home() {
     const navigate = useNavigate();
 
     function handleStartButton() {
-        navigate("/pages/Choose");
-      }
+        navigate("/Choose");
+    }
+
     return (
         <div className='Home'>
             <div className='Content'>
@@ -18,7 +19,7 @@ function Home() {
                 </div>
                 <h3>Versicherung abschliessen in 3 einfachen Schritten</h3>
                 <Progress progressBarValue1='0' progressBarValue2='0' />
-                <md-filled-button>Jetzt Starten</md-filled-button>
+                <md-filled-button onClick={handleStartButton}>Jetzt Starten</md-filled-button>
             </div>
         </div>
     );

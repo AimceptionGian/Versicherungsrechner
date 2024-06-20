@@ -1,27 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.css';
-import App from './pages/App';
 import Home from './pages/Home';
 import Choose from './pages/Choose';
 import Questions from './pages/Questions';
 import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 
 import '@material/web/all.js';
+import Calculation from './pages/Calculation';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/pages/Home" element={<Home />} />
-        <Route path="/pages/Choose" element={<Choose />} />
-        <Route path="/pages/Questions" element={<Questions />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/Choose" element={<Choose />} />
+        <Route path="/Questions" element={<Questions />} />
+        <Route path="/Calculation" element={<Calculation />} />
       </Routes>
-    </Router> 
+    </Router>
   </React.StrictMode>
 );
 
