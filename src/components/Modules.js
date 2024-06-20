@@ -56,3 +56,5 @@ export const moduleList = [
             </div>
         </div>
     ];
+
+export const prizes = [63.95, 65.94, 65.52, 35.70];

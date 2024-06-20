@@ -263,7 +263,7 @@ md-list-item {
   height: 100px;
 }
 
-h1, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6{
   margin: 18px;
   font-family: "Inika";
   font-weight: 400;
@@ -273,6 +273,15 @@ h1, h3, h4, h5, h6{
 h1 {
   font-weight: 700;
   font-size: 47px;
+}
+
+h2 {
+  font-size: 38px;
+}
+
+h3 {
+  margin-top: 0px;
+  font-size: 18px;
 }
 
 h4 {
@@ -318,4 +327,32 @@ h6 {
 
 .Continue {
   margin-left: 1111px;
+}
+
+.Prize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 44px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 10px;
+  background-color: #625B71;
+}
+
+@media (max-width: 1215px) {
+  .Prize {
+    display: none;
+  }
+}
+
+#Praemie {
+  width: 362px;
+  height: 70px;
+}
+
+.Prize h3 {
+  color: #FFFFFF;
+  margin: 0;
 }
