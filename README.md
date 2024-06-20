@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# Versicherungsrechner
+## Ein Projekt im Rahmen des Moduls Prog1 an der BBW von Gian Oechslin
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+Im Verzeichnis des Projekts:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Dies startet die Applikation und öffnet sie direkt im Browser unter 'localhost:3000'
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Persönliche Auswertung des Projekts
 
-### `npm test`
+### Planung
+Die Planung ging länger als bei vielen Schulprojekten. Dies ermöglichte eine klare Vorstellung der Applikation schon vor Beginn der Umsetzung.
+Ich habe mir auch genügend Zeit gelassen die Planung ordentlich zu machen. So habe ich mir zum Beispiel recht viel Zeit für das Figma genommen und schon dort eine gewisse Struktur eingehalten, denn ich wusste, dass es mir so später einfacher fallen würde das Projekt umzusetzen.
+Der Link zum Figma:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `https://www.figma.com/design/8Rlp0IMoxCjrrBXGVKL026/Material-3-Design-Kit-(Community)?node-id=54796-26325&t=SogrsbI4ghctc6Ci-1`
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Umsetzung
+Die Umsetzung war trotz guter Planung nicht einfach. Es zeigten sich viele Probleme, welche ich im Vorfeld nicht bedacht hatte und ich liess mich zu lange an diesen aufhalten.
+Die Priorität lag darin die Probleme zu lösen und daraus zu lernen. Das würde ich für zukünftige Projekte jedoch nochmals überdenken, da diese Arbeit oft im Projekt nicht ersichtlich ist und weniger Punkte erzielt. Ich bin daher selbst auch frustriert, da ich mir viel vorgenommen und vieles davon nicht erreicht habe. So merkte ich zum Beispiel erst zum Schluss, dass meine Herangehensweise für die Funktionalität der Applikation sehr schlecht gewesen war. Mir wurde erst gegen Ende klar, dass ich praktisch meinen ganzen Code umschreiben musste, um zum Beispiel die Prämie zu berechnen. So steigte die Frustration, da ich auch merkte, dass für das alles die Zeit nicht reichen würde.
+Abschliessend kann ich sagen, dass ich das nächste mal vieles anders machen würde. Zum Beispiel mit der Funktionalität der Applikation zu beginnen. Jedoch bin ich mit dem was ich erreicht habe recht zufrieden, da ich finde, dass die Applikation recht schön geworden ist.
