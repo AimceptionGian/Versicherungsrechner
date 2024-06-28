@@ -32,6 +32,8 @@ Ich habe mir auch genügend Zeit gelassen die Planung ordentlich zu machen. So h
 
 ### [Link zum Figma](https://www.figma.com/design/8Rlp0IMoxCjrrBXGVKL026/Material-3-Design-Kit-(Community)?node-id=54796-26325&t=SogrsbI4ghctc6Ci-1)
 
+### Die erste Skizze des Wireframes und eine Dokumentation zur Recherche sind im Git Repository zu finden [Wireframe Skizze](https://github.com/AimceptionGian/versicherungsrechner/blob/main/WireframeSkizze.pdf) [Recherche](https://github.com/AimceptionGian/versicherungsrechner/blob/main/RechercheVersicherungsrechner.pdf)
+
 ### Umsetzung
 Die Umsetzung war trotz guter Planung nicht einfach. Es zeigten sich viele Probleme, welche ich im Vorfeld nicht bedacht hatte und ich liess mich zu lange an diesen aufhalten.
 Die Priorität lag darin die Probleme zu lösen und daraus zu lernen. Das würde ich für zukünftige Projekte jedoch nochmals überdenken, da diese Arbeit oft im Projekt nicht ersichtlich ist und weniger Punkte erzielt. Ich bin daher selbst auch frustriert, da ich mir viel vorgenommen und vieles davon nicht erreicht habe. So merkte ich zum Beispiel erst zum Schluss, dass meine Herangehensweise für die Funktionalität der Applikation sehr schlecht gewesen war. Mir wurde erst gegen Ende klar, dass ich praktisch meinen ganzen Code umschreiben musste, um zum Beispiel die Prämie zu berechnen. So steigte die Frustration, da ich auch merkte, dass für das alles die Zeit nicht reichen würde.
