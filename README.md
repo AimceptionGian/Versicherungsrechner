@@ -1,9 +1,26 @@
 # Versicherungsrechner
 ## Ein Projekt im Rahmen des Moduls Prog1 an der BBW von Gian Oechslin
 
-Im Verzeichnis des Projekts:
+## Voraussetzungen
+- npm (Node.js): [Node.js herunterladen](https://nodejs.org/en)
 
-### `npm start`
+## Installation
+1. Repository klonen:
+    ```
+    git clone https://github.com/AimceptionGian/versicherungsrechner
+    ```
+2. In das Projektverzeichnis wechseln:
+    ```
+    cd versicherungsrechner
+    ```
+3. Dependencies installieren:
+    ```
+    npm install
+    ```
+4. Anwendung starten:
+    ```
+    npm start
+    ```
 
 Dies startet die Applikation und öffnet sie direkt im Browser unter 'localhost:3000'
 
@@ -12,9 +29,8 @@ Dies startet die Applikation und öffnet sie direkt im Browser unter 'localhost:
 ### Planung
 Die Planung ging länger als bei vielen Schulprojekten. Dies ermöglichte eine klare Vorstellung der Applikation schon vor Beginn der Umsetzung.
 Ich habe mir auch genügend Zeit gelassen die Planung ordentlich zu machen. So habe ich mir zum Beispiel recht viel Zeit für das Figma genommen und schon dort eine gewisse Struktur eingehalten, denn ich wusste, dass es mir so später einfacher fallen würde das Projekt umzusetzen.
-Der Link zum Figma:
 
-### `https://www.figma.com/design/8Rlp0IMoxCjrrBXGVKL026/Material-3-Design-Kit-(Community)?node-id=54796-26325&t=SogrsbI4ghctc6Ci-1`
+### [Link zum Figma](https://www.figma.com/design/8Rlp0IMoxCjrrBXGVKL026/Material-3-Design-Kit-(Community)?node-id=54796-26325&t=SogrsbI4ghctc6Ci-1)
 
 ### Umsetzung
 Die Umsetzung war trotz guter Planung nicht einfach. Es zeigten sich viele Probleme, welche ich im Vorfeld nicht bedacht hatte und ich liess mich zu lange an diesen aufhalten.
