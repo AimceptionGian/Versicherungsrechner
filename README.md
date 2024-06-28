@@ -1,6 +1,10 @@
 # Versicherungsrechner
 ## Ein Projekt im Rahmen des Moduls Prog1 an der BBW von Gian Oechslin
 
+## Deployment
+Ich habe mich für Vercel entschieden um die Webseite bereitzustellen. Auf der [Vercel Webseite](https://vercel.com) konnte ich ganz einfach mein GitHub Repository angeben und die Webseite wurde deployed.
+Man kann sie [hier](https://versicherungsrechner.vercel.app) abrufen.
+
 ## Voraussetzungen
 - npm (Node.js): [Node.js herunterladen](https://nodejs.org/en)
 
